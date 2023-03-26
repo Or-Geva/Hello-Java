@@ -21,7 +21,7 @@ steps:
     command: 'Pull'
     artifactoryConnection: 'eco'
     imageName: 'ecosysjfrog.jfrog.io/default-docker-remote/node:16-alpine3.17'
+    collectBuildInfo: true
+    buildName: '$(Build.DefinitionName)'
+    buildNumber: '$(Build.BuildNumber)'
     skipLogin: false
-    buildName: 'oror'
-    buildNumber: 1
-    module: 'cdpq-node-16-alpine3.17'
